@@ -1,0 +1,6 @@
+cd /home/artek/shie/SSD/sources/OTA/LineageOTAstatic/
+./update.sh
+git commit -a -m "$(date +%d.%m.%y-%S-%s)"
+git push
+
+
