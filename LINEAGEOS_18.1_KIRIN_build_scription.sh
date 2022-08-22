@@ -4,6 +4,7 @@ mka clobber
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
 ccache -M 100G
+ccache -o compression=true
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 breakfast kirin
 croot
